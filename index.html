@@ -7,20 +7,58 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif; height: 100%;}
+.scroll { 
+			margin:4px, 4px; 
+			padding:4px; 	 
+			width: 50%; 
+			height: 50%; 
+			overflow-x: hidden; 
+			overflow-x: auto; 
+			text-align:justify; 
+		}
+		
+
+/* Hide scrollbar for IE and Edge */
+.scroll {
+    -ms-overflow-style: none;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.third {
+
+	width:33%;
+	height: 100%;
+	float: left;
+
+}
+
+.two-third {
+	width:67%;
+	height: 100%;
+	float: right;
+}
+
+
+
+
 </style>
 <body class="w3-light-grey">
 
 <!-- Page Container -->
-<div class="w3-content" style="max-width:100%;">
+<div style="height:100%; max-width:100%; overflow: hidden;">
 
 	<!-- Left Column -->
-    <div class="w3-third">
+    <div class="third">
     
-      <div class="w3-black w3-text-light-grey w3-card-4">       
-		<center><img src="IMG_0284.jpg" style="width:40%; height: 250px;"  alt="Avatar" class = "w3-circle w3-padding-16"></center>
+      <div class="w3-black w3-text-light-grey w3-card-4"  style="height:100%;">       
+		<center><img src="IMG_0284.jpg" style="width:35%; height: 200px;"  alt="Avatar" class = "w3-circle w3-padding-16"></center>
 		<div class="w3-center">
-			<h3>Nikita Raut</h3><p>Master's in Computer Science at Northwestern University</p>
+			<h3>Nikita Raut</h3><p>Computer Science Graduate Student at Northwestern University</p>
 		</div>	  
 		<footer class="w3-center">
 		  <a href = 'mailto:rautnikita77@gmail.com' style ="text-decoration:none;" class="fa fa-envelope w3-large w3-hover-opacity w3-text-light-grey w3-margin-right"></a>
@@ -32,24 +70,26 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: Arial, Helvetica, sans-serif}
 		</p></center>
 
 	  
-		<br>
+	
 		<div class="w3-container">
 			<p class="w3-large w3-margin"><b>About Me</b></p>
-			<p class = 'w3-margin' align = 'justify'>I am a Computer Science master's student at Northwestern University. My research interests include Machine Learning and Data Analysis.
-
-My objective is to provide machine driven intelligent solutions to real world problems. 
-
+			<p class = 'w3-margin' align = 'justify'>I am a Computer Science graduate student at Northwestern University, Illinois. 
+			I am interested in the field of Artificial Intelligence which is constantly evolving in order to face modern challenges.
+			It's usage and applicability in diverse applications such as image and speech recognition, healthcare, security, autonomous systems, 
+			and natural language processing fascinate me. I wish to explore the applications of machine learning in these diverse areas and 
+			aim to provide technology-driven automated and intelligent solutions to real-world challenges through my research. 
 
 			</p>
-			<hr>
+		
 		</div>
         
-        <div class="w3-container">
+        <!-- 
+		<div class="w3-container">
           
           <p class="w3-large w3-margin"><b>Skills</b></p>
           <p class = 'w3-margin-left'><b>Languages:</b> Python, Java</p>
           
-          <p class = 'w3-margin-left'><b>Databases:</b> MySQL, Postgresql, Firebase</p>
+          <p class = 'w3-margin-left'><b>Databases:</b> MySQL, Postgresql, Oracle, Firebase</p>
          
           <p class = 'w3-margin-left'><b>Tools:</b> Tableau, Spark, Databricks, D3.js </p>
      
@@ -59,7 +99,7 @@ My objective is to provide machine driven intelligent solutions to real world pr
           <br>    
 		  <br>
         </div>
-		
+		-->
 		  
 		  
 		
@@ -68,20 +108,19 @@ My objective is to provide machine driven intelligent solutions to real world pr
 
     <!-- End Left Column -->
     </div>
-
 	
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
+	    <!-- Right Column -->
+    <div class="two-third scroll">
 	<div class="w3-container w3-card w3-white ">
         <h2 class="w3-text-dark-grey w3-padding-16 w3-margin">Education</h2>
         <div class="w3-container">
-          <h5 class=" w3-text-dark-grey">Northwestern University | Master Degree </h5>
+          <h5 class=" w3-text-dark-grey">Northwestern University | Master's Degree </h5>
           <h6 class="w3-text-grey">Sept 2019 - Present</h6>
-          <p>Coursework: Introduction to AI, Machine Learning, Data Science Seminar, Deep Learning Foundations from Scratch, Statistical Pattern Recognition, Natural Language Processing, Advanced Deep Learning</p>
+          <p>Coursework: Introduction to AI, Machine Learning, Data Science Seminar, Deep Learning Foundations from Scratch, Statistical Pattern Recognition, Natural Language Processing, Advanced Deep Learning
+		  Design and Analysis of Algorithms, Practicum in Intelligent Information Systems</p>
         </div>
        <div class="w3-container">
-          <h5 class="w3-text-dark-grey">KJ Somaiya College of Engineering | Bachelor Degree </h5>
+          <h5 class="w3-text-dark-grey">KJ Somaiya College of Engineering | Bachelor's Degree </h5>
           <h6 class="w3-text-grey">2015 - 2019</h6>
           <p>Coursework: Artificial Intelligence, Machine Learning, Neural Networks and Fuzzy Logic, Data Warehousing and Mining, Advanced Database Management, Image Processing, Data Structures, Operating SystemsAnalysis of Algorithms</p><br>
         </div>
@@ -91,15 +130,20 @@ My objective is to provide machine driven intelligent solutions to real world pr
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-dark-grey w3-padding-16 w3-margin">Work Experience</h2>
         <div class="w3-container">
-          <h5 class="w3-text-dark-grey">KJSCE | Machine Learning Internship</h5>
+          <h5 class="w3-text-dark-grey">KJSCE | Deep Learning Internship</h5>
           <h6 class="w3-text-grey">Dec 2017 - Jan 2018</h6>
-          <p>Implemented a Real Time Face Recognition System using k-shot Learning. Performed transfer learning, using a resnet model pretrained on triplet loss function.</p>
+          <ul><li>Implemented a Real Time Face Recognition System using k-shot Learning. </li>
+		  <li>Performed transfer learning, using a resnet model pretrained on triplet loss function. </li>
+<li>Brought down the training samples to as low as k= 1, still achieving a decent accuracy close to 90%. </li>
+<li>Achieved 98% accuracy for k = 5 shots and 50 classes</li></ul>
+<a href="https://github.com/rautnikita77/Face-Recognition-using-One-Shot-Learning">See work</a>
 		    <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-text-dark-grey">Damage Detection System | Machine Learning Internship</h5>
+          <h5 class="w3-text-dark-grey">Computer Help | Machine Learning Internship</h5>
           <h6 class="w3-text-grey">May - July 2017</h6>
-          <p>Developed an Damage Detection System using image processing, which aimed at an early detection of cracks in inaccessible places. Achieved fast and reliable detection of cracks to concrete surfaces, replacing the slower subjective traditional human inspection procedures. </p>
+          <ul><li>Developed an Damage Detection System using image processing, which aimed at an early detection of cracks in inaccessible places.</li>
+<li>		  Achieved fast and reliable detection of cracks to concrete surfaces, replacing the slower subjective traditional human inspection procedures.</li></ul>
         
         </div>
        
@@ -109,34 +153,106 @@ My objective is to provide machine driven intelligent solutions to real world pr
         <h2 class="w3-text-dark-grey w3-padding-16 w3-margin">Projects</h2>
         <div class="w3-container">
           <h5 class="w3-text-dark-grey">Image Inpainting</h5>
-          <h6 class="w3-text-grey">Jan 2019 - Present</h6>
-          <p>Performing restorative conservation of missing pixels of an image by passing its k nearest pixels through a LSTM network
-and applying position blending to preserve intensities.</p>
+          <h6 class="w3-text-grey">Jan - March 2020</h6>
+		  <img src = "Inpainting-workflow.png" title = 'Workflow' style="width:500px;height:150px;">
+          <p>Performed restoration of missing or corrputed regions of an image with the objective of presenting the image such that it appears to be original. 
+		  Most of the existing techniques work for images that have a fixed format of the missing part. 
+		  Our method comprises computing the k nearest neighbors of each missing pixel and feeding them through a bidirectional LSTM to predict its pixel value. 
+	
+		  Poisson blending has been used match the pixel intensities of the reconstructed region with the surrounding region.
+We have focussed our research on implementing a model that is computationally less expensive by considering only significant pixels for predicting the unknown pixel
+ values, and that is more generalized by making it independent of the shape and size of the missing region. 
+ The baseline model that we have used is Pixel Recurrent Neural Network, by DeepMind. 
+ We propose a new approach to deal with some of the shortcomings of PixelRNN like shape dependency, computationally expensive, unused pixels and discontinuity in order. 
+ 
+ </p>
+
           <hr>
         </div>
 		 <div class="w3-container">
-          <h5 class="w3-text-dark-grey">Age Independent Face Verification System </h5>
-          <h6 class="w3-text-grey">Jan 2019 - Present</h6>
-          <p>Building a Face Verification System that unlocks a device independent of the age of the person using Conditional Age Gans
-with Identity Preservation.</p>
-          <hr>
+          <h5 class="w3-text-dark-grey">Text to SQL </h5>
+          <h6 class="w3-text-grey">Feb - March 2020</h6>
+		  <img src="text2sql-workflow.png" title = "Recursive decoding process" style="width:400px;height:300px;">
+          <p>Creating a SQL query from a natural language is very helpful for people who have limited technical background. 
+		  By using simple phrases (text) the model should be able to retrieve the information from databases. 
+		  Most existing models have achieved decent accuracies at this task by making use of encoder-decoder models with an attention mechanism. 
+		  However, the evaluation scheme used by most of these models has a number of limitations. One of the major limitations is poor generalizability to new programs and databases. 
+		  Most datasets have queries in the test set which also appear in the training set, making the evaluation of many models flawed. We have tried to overcome this limitation using a recursive decoding approach. The decoding part is recursive, i.e. the decoder contains a call to itself. Each decoder is responsible for predicting a specific part of the SQL query.
+		  Given a natural language question posed to retrieve information from a large database, the objective was to translate this question to an equivalent SQL query, such that the execution of that query provides the user with the desired results. 
+  We have focussed our work on implementing a model that generalizes well for unseen data. We used the WikiSQL dataset which consists different tables in train and test sets.
+ This ensures that the evaluation of our model on unseen data is accurate</p>
+           <a href="https://github.com/rautnikita77/seq2sql">See project</a>
+		  <hr>
+        </div>
+		 <div class="w3-container">
+          <h5 class="w3-text-dark-grey">Analyzing spread of COVID-19 using Graph Neural Networks</h5>
+          <h6 class="w3-text-grey">Feb - March 2020</h6>
+		   <img src="GNN.png" title = "Visualization and identification of the strong/weak nodes using our visualizer" style="width:500px;height:300px;">
+	
+          <p>The aim of this project is to provide users with an end-to-end pipeline for processing data related to COVID-19, create graph structure from that data and allow users to easily manage node features and edge weights.
+
+Our project has the following major components:
+• Data Loader: A data loader class to easily load population data, flight data and form graph nodes. It can also handle time-series data.
+• Graph Loader: A graph loader to create the graph representation in the form of a Pytorch-Geometric object. It has other features like creating graph edges, creating edge weights, filtering edges and creating node features.
+• Models: The repository comes with three models – Graph Convolution Network, Message Passing Network, Sage Convolution Network. Alternatively, users can easily add their own Graph Networks.
+• Visualizer: A visualizer is provided to visualize the graph formed with functionality like identifying important nodes and generating heat maps.</p>
+           <a href="https://github.com/rautnikita77/COVID-19-GNN">See project</a>
+		  <hr>
         </div>
 		 <div class="w3-container">
           <h5 class="w3-text-dark-grey">Data Analytics on Chicago Police Dataset</h5>
           <h6 class="w3-text-grey">Sept - Dec 2019</h6>
-          <p>Performed relational analytics, visualization, graph analytics and machine learning on Chicago Police Dataset to learn about the general behavior of the officers charged with misconduct and to identify the trends in data</p>
+		  <img src="Chicago-heatmap.png" title = "Allgeations in Chicago over the years" style="width:500px;height:200px;">
+          <p>Analyzed the Chicago Police Dataset published by the Invisible Institute to gain insights into the police misconduct in Chicago through the years. The theme of the project was to understand the impact and analyze the trends after the CPDB went public. Our project compares and analyzes the trends before the release of CPDB and compares it with the trends observed after the release of CPDB.
+
+The project involved five checkpoints:-
+1) Relational Analytics -
+Used SQL to analyze the effect of the rank of the officer on the number of complaints against them, incidents carried out by off-duty cops and the effect of the investigator's race on the punishment given to the offending officer.
+
+2) Visualizations -
+Used Tableau to analyze the trends in allegation counts over the years. D3 was used to develop an interactive Chicago heatmap to show the allegation counts in different regions over the years.
+
+3) Data Cleaning and Integration -
+Performed data cleaning and integration using Trifacta to analyze the average duration of cases per officer and settlement amount per officer rank
+
+4) Graph Analytics -
+Formed a co-accusal network where the officers are the nodes and they have an edge if they are co-accused in a case
+
+5) Machine Learning and Natural Language Processing -
+Performed tasks like analyzing the data distribution by flagging officers as “bad cops” or “good cops” using SVM and Logistic Regression, predicting the user complaints in upcoming years by performing time series analysis using the ARIMA model, Document Tagging using N-gram model.</p>
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-text-dark-grey">Smart Goods Transportation System | Final Year Project</h5>
+          <h5 class="w3-text-dark-grey">Smart Goods Transportation System | Final Year Bachelor Project</h5>
           <h6 class="w3-text-grey">July 2018 - May 2019</h6>
-          <p>Designed and Developed a full stack software application using IoT technology and firebase cloud service to provide truck drivers, customers and vehicle owners with reliable information and communication support regarding journey schedule of patrons. </p>
+		  
+          <p>This project aimed at developing a physical 3 tiered prototype - backend, frontend and database - to provide truck drivers and customers with easy access to information regarding return journey schedule of patrons to avoid empty trips. Using our Android app, the customer could send a request for the
+goods to be transported and, depending on the location of the customer and the type of goods, an appropriate vehicle would be assigned.
+Being rigorously tested and used as part of our college campus initiative, this project exposed me to diverse fields of computer science, such as data mining, database design and development, image processing, machine learning, IoT, and Time Series Analysis. </p>
+Technologies used were:<ul>
+<li>Firebase was used for data processing and storage</li>
+<li>Clustering and Neural Networks for finding the best route</li>
+<li>Raspberry pi with GPS and GPRS modules for sensing locations</li></ul>
+<a href="https://github.com/rautnikita77/Smart-Goods-Transportation-System">See project</a>
+
+
           <hr>
         </div>
 		<div class="w3-container">
           <h5 class="w3-text-dark-grey">Time Series Analysis for Best Travel Route</h5>
           <h6 class="w3-text-grey">Jan - Feb 2018</h6>
+		  <img src="time-series.png" title = 'Analysis of traffic for the month of October' style="width:400px;height:200px;">
+		  
           <p>Performed Time Series Analysis using ARIMA model to predict the shortest path between two endpoints. The dataset used for this time series was created using automated tools which collected the travel times for four different routes between the source and the destination from Google Maps, Ola and Uber </p>
+          <hr>
+        </div>
+		
+		<div class="w3-container">
+          <h5 class="w3-text-dark-grey">Up vote prediction for News Article</h5>
+          <h6 class="w3-text-grey">April 2020</h6>
+          <p>Built a Natural Language Processing system to predict the number of upvotes for a particular news article based on the headline, the date of creation, author and news category using deep neural networks.
+</p>
+<a href="https://github.com/rautnikita77/Up_vote_prediction">See project</a>
           <hr>
         </div>
         
@@ -144,6 +260,10 @@ with Identity Preservation.</p>
 
     <!-- End Right Column -->
     </div>
+
+	
+
+
     
 
   
